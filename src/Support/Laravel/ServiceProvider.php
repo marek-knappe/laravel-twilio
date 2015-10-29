@@ -36,11 +36,11 @@ class ServiceProvider extends LaravelServiceProvider
             return $this->provider;
         }
 
-        if (version_compare(Application::VERSION, '5.0', '<')) {
-            $this->provider = new L4ServiceProvider($this->app);
-        } else {
+        //if (version_compare(Application::VERSION, '5.0', '<')) {
+        //    $this->provider = new L4ServiceProvider($this->app);
+        //} else {
             $this->provider = new L5ServiceProvider($this->app);
-        }
+        //}
 
         return $this->provider;
     }

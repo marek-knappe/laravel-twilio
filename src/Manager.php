@@ -21,6 +21,7 @@ class Manager implements TwilioInterface
      */
     public function __construct($default, array $settings)
     {
+    	
         $this->default = $default;
         $this->settings = $settings;
     }
